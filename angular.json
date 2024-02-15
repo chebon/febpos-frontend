@@ -25,39 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/bootstrap.min.css",
-              "src/assets/css/bootstrap-datetimepicker.min.css",
-              "src/assets/css/animate.css",
-              "src/assets/css/feather.css",
-              "src/assets/plugins/select2/css/select2.min.css",
-              "src/assets/plugins/summernote/summernote-bs4.min.css",
-              "src/assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css",
-              "src/assets/css/dataTables.bootstrap5.min.css",
-              "src/assets/plugins/fontawesome/css/fontawesome.min.css",
-              "src/assets/plugins/fontawesome/css/all.min.css",
-              "src/assets/css/style.css"
+              "src/styles.css"
             ],
-
-            "scripts": [
-
-              "src/assets/js/jquery-3.7.1.min.js",
-              "src/assets/js/feather.min.js",
-              "src/assets/js/jquery.slimscroll.min.js",
-              "src/assets/js/jquery.dataTables.min.js",
-              "src/assets/js/dataTables.bootstrap5.min.js",
-              "src/assets/js/bootstrap.bundle.min.js",
-              "src/assets/plugins/summernote/summernote-bs4.min.js",
-              "src/assets/plugins/select2/js/select2.min.js",
-              "src/assets/js/moment.min.js",
-              "src/assets/js/bootstrap-datetimepicker.min.js",
-              "src/assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js",
-              "src/assets/plugins/sweetalert/sweetalert2.all.min.js",
-              "src/assets/plugins/sweetalert/sweetalerts.min.js",              
-              "src/assets/js/theme-script.js",
-              "src/assets/js/script.js",
-              "src/assets/js/rocket-loader.min.js"
-
-            ],
+            "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -121,15 +91,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-
-            ]
+            "scripts": []
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": "cbf20298-cb28-4e08-a194-bdcad6510483"
+    "analytics": "e853450c-18b6-41f0-9c1f-1337bca53ca5"
   }
 }

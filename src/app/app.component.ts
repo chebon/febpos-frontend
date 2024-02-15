@@ -1,7 +1,5 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
-// declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -10,18 +8,6 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent {
   title = 'fedpos-frontend';
-
-  constructor() { }
-
-  ngAfterViewInit(): void {
-    // jQuery code to be executed after the view has initialized
-    document.addEventListener('DOMContentLoaded', (event) => {
-      
-    });
-  }
 }
-
-
-

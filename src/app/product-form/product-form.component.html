@@ -1,1 +1,31 @@
-<p>product-form works!</p>
+<form (ngSubmit)="saveProduct()">
+    <label>Name of product:</label>
+    <input type="text" [(ngModel)]="productName" name="productName">
+  
+    <label>Category:</label>
+    <select [(ngModel)]="category" name="category">
+      <option value="Cement">Cement</option>
+      <option value="Nails">Nails</option>
+      <option value="Iron Sheet">Iron Sheet</option>
+    </select>
+  
+    <label>Selling price:</label>
+    <select [(ngModel)]="sellingPrice" name="sellingPrice">
+      <option value="700">700</option>
+      <option value="50">50</option>
+      <option value="500">500</option>
+    </select>
+  
+    <label>Unit:</label>
+    <select [(ngModel)]="unit" name="unit">
+      <option value="kgs">kgs</option>
+      <option value="Pack">Pack</option>
+      <option value="Piece">Piece</option>
+    </select>
+  
+    <label>Description:</label>
+    <textarea [(ngModel)]="description" name="description"></textarea>
+  
+    <button type="submit">Save</button>
+  </form>
+  
