@@ -1,0 +1,76 @@
+@if (viewMode){
+    @if (currentProduct.id){
+    <h4>Product</h4>
+    <div>
+      <label><strong>Title:</strong></label> {{ currentProduct.name }}
+    </div>
+    <div>
+      <label><strong>Description:</strong></label>
+      {{ currentProduct.description }}
+    </div>
+    <div>
+      <label><strong>Status:</strong></label>
+      {{ currentProduct.published ? "Published" : "Pending" }}
+    </div>
+  
+    <a class="badge badge-warning" routerLink="/products/{{ currentProduct.id }}">
+      Edit
+    </a>
+    } @else {<p>Please click on a Product...</p>}
+  } @else {
+    @if (currentProduct.id) {
+    <div class="edit-form">
+      <h4>Product</h4>
+      <form>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            [(ngModel)]="currentProduct.name"
+            name="title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            [(ngModel)]="currentProduct.description"
+            name="description"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label><strong>Status:</strong></label>
+          {{ currentProduct.published ? "Published" : "Pending" }}
+        </div>
+      </form>
+  
+      @if (currentProduct.published) {
+      <button class="badge badge-primary mr-2"
+        (click)="updatePublished(false)" >
+        UnPublish
+      </button>
+      } @else {
+      <button class="badge badge-primary mr-2" (click)="updatePublished(true)">
+        Publish
+      </button>
+      }
+  
+      <button class="badge badge-danger mr-2" (click)="deleteProduct()">
+        Delete
+      </button>
+  
+      <button
+        type="submit"
+        class="badge badge-success mb-2"
+        (click)="updateProduct()">
+        Update
+      </button>
+      <p>{{ message }}</p>
+    </div>
+    } @else {<p>Cannot access this Product...</p>}
+  }
